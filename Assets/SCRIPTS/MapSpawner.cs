@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class MapSpawner : MonoBehaviour
 {
-
-    public GameObject[] pathSegmentPrefabs;
+    public GameObject standardPathPrefab;
+    public GameObject[] pathObstaclePrefab;
     public Transform spawnPoint;
 
     void Start()
@@ -13,25 +13,20 @@ public class MapSpawner : MonoBehaviour
         GeneratePath();
     }
 
-
-    void Update()
+    void GeneratePath()
     {
-        
-    }
-
-
-    private void GeneratePath()
-    {
-        int randomIndex = Random.Range(0, pathSegmentPrefabs.Length);
-        GameObject segmentPrefab = pathSegmentPrefabs[randomIndex];
-
+        int randomIndex = Random.Range(0, pathObstaclePrefab.Length);
+        GameObject segmentPrefab = pathObstaclePrefab[randomIndex];
         GameObject newSegment = Instantiate(segmentPrefab, spawnPoint.position, spawnPoint.rotation);
 
-        spawnPoint = newSegment.transform.Find("EndPoint");
+        Transform endMark = newSegment.transform.Find("EndPoint");
+        Vector3 nextSegmentPosition = endMark.position;
 
-        float delay = 0.1f;
+        Instantiate(standardPathPrefab, spawnPoint.position, Quaternion.LookRotation(nextSegmentPosition - spawnPoint.position));
 
-        Invoke("GeneratePath", delay);
+        spawnPoint = endMark;
+
+        Invoke("GeneratePath", 0.01f);
     }
 
 }

@@ -51,6 +51,7 @@ public class PENGUIN : MonoBehaviour
         }
         else { return false; }
     }
+
     private void DetectJump()
     {
         if (SystemInfo.supportsGyroscope && isGrounded)
