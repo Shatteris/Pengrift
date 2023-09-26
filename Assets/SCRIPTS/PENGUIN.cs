@@ -10,7 +10,9 @@ public class PENGUIN : MonoBehaviour
     public float speed = 10f;
     public float jumpforce = 10f;
     public float jumpThreshold = 3f;
+    public float jumpcooldown = 1f;
 
+    private bool canJump = true;
     private bool isGrounded = true;
     private Rigidbody playerBody;   
 
@@ -36,6 +38,7 @@ public class PENGUIN : MonoBehaviour
     {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
 
+
     }
     //-----------------------------------------------------------------
 
@@ -54,7 +57,7 @@ public class PENGUIN : MonoBehaviour
 
     private void DetectJump()
     {
-        if (SystemInfo.supportsGyroscope && isGrounded)
+        if (SystemInfo.supportsGyroscope && isGrounded && canJump)
         {
             Gyroscope gyro = Input.gyro;
             float currentYRotation = gyro.rotationRateUnbiased.y;
@@ -70,7 +73,14 @@ public class PENGUIN : MonoBehaviour
         {
             playerBody.AddForce(Vector3.up * jumpforce, ForceMode.Impulse);
             isGrounded = false;
+            canJump = false;
+            Invoke("EnableJump", jumpcooldown);
         }
+
+        private void EnableJump()
+    {
+        canJump = true;
+    }
     //-------------------------------------------------------------------------------------------
 
 

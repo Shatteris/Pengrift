@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Obstacles : MonoBehaviour
 {
@@ -15,13 +16,20 @@ public class Obstacles : MonoBehaviour
 
 
     //Detect Player----------------------------------------
-    void OnTriggerEnter(Collider HitBox)
+    private void OnTriggerEnter(Collider HitBox)
     {
         if(!Collision && HitBox.CompareTag("Player"))
         {
             Debug.Log("Game Over");
             Collision = true;
+            GameOver();
         }
     }
     //-----------------------------------------------------
+
+    private void GameOver()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
 }
