@@ -34,18 +34,31 @@ public class ObstaclePool : MonoBehaviour
 
     public GameObject GetObstacle()
     {
+        List<GameObject> availableObstacles = new List<GameObject>();
+
         foreach (var OBSTACLE in Obstacles)
         {
             if (!OBSTACLE.activeInHierarchy)
             {
-                OBSTACLE.SetActive(true);
-
-                OBSTACLE.transform.position = Vector3.zero;
-                OBSTACLE.transform.rotation = Quaternion.identity;
-
-                return OBSTACLE;
+                availableObstacles.Add(OBSTACLE);
             }
 
+        }
+
+        if (availableObstacles.Count > 0)
+        {
+            //random select an obstacle------------------
+
+            int randomIndex = Random.Range(0, availableObstacles.Count);
+            GameObject selectedObstacle = availableObstacles[randomIndex];
+
+            //spawn locations-------------------------------------
+            selectedObstacle.transform.position = Vector3.zero;
+            selectedObstacle.transform.rotation = Quaternion.identity;
+
+            //Activation--------------------------
+            selectedObstacle.SetActive(true);
+            return selectedObstacle;
         }
         return null;
     }

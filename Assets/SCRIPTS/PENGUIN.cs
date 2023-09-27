@@ -18,6 +18,12 @@ public class PENGUIN : MonoBehaviour
 
     void Start()
     {
+        if (!Input.gyro.enabled)
+        {
+            Debug.LogError("Gyroscope not enabled");
+            return;
+        }
+
         playerBody = GetComponent<Rigidbody>();
     }
 

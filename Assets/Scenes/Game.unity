@@ -370,7 +370,7 @@ MonoBehaviour:
   - {fileID: 3740051062524388849, guid: cd24871dd43363648b06ba35dad6593a, type: 3}
   - {fileID: 7168080038915519063, guid: e1b54f91c56501e428cc49bb198f5231, type: 3}
   - {fileID: 4539627767979878016, guid: a38b3aa366abddc41aff6583d0a9ce40, type: 3}
-  poolSize: 12
+  poolSize: 1
 --- !u!114 &757404701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1243,6 +1243,22 @@ PrefabInstance:
     - target: {fileID: 6439335777865968208, guid: 9a029ff024bea6c42b2c3ca2d1ec0a4b, type: 3}
       propertyPath: m_IsTrigger
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7773184332146716414, guid: 9a029ff024bea6c42b2c3ca2d1ec0a4b, type: 3}
+      propertyPath: speed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7773184332146716414, guid: 9a029ff024bea6c42b2c3ca2d1ec0a4b, type: 3}
+      propertyPath: tiltSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7773184332146716414, guid: 9a029ff024bea6c42b2c3ca2d1ec0a4b, type: 3}
+      propertyPath: maxtiltAngle
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7773184332146716414, guid: 9a029ff024bea6c42b2c3ca2d1ec0a4b, type: 3}
+      propertyPath: jumpThreshold
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a029ff024bea6c42b2c3ca2d1ec0a4b, type: 3}

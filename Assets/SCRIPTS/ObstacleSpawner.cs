@@ -19,29 +19,20 @@ public class ObstacleSpawner : MonoBehaviour
 
     private void SpawnObstacle()
     {
-        int randomObstacle = Random.Range(0, obstaclePool.obstaclePrefabs.Count);
-
         GameObject obstacle = obstaclePool.GetObstacle();
 
-        if ( obstacle != null)
+        if(obstacle!= null)
         {
-            //Ontop the Ramp----
+            //On top of ramp----------------
             obstacle.transform.position = SpawnTarget.position;
 
-            //Rotation----
-            obstacle.transform.rotation = Quaternion.Euler(15f, 0f, 0f);
+            //Rotation--------------------------------------------
+            obstacle.transform.rotation = Quaternion.Euler(0f, 15f, 0f);
 
-            // Rigidbody--------
+            //Rigidbody and speed going up the ramp------------------------------------
             Rigidbody obstacleRigidbody = obstacle.GetComponent<Rigidbody>();
 
-            // Ramp climb velocity--------
-            obstacleRigidbody.velocity = transform.forward * obstacleSpeed;
-
-            Collider obstacleCollider = obstacle.GetComponent<Collider>();
-            if ( obstacleCollider != null)
-            {
-                obstacleCollider.enabled = true;
-            }
+            obstacleRigidbody.velocity = SpawnTarget.forward * obstacleSpeed;
         }
     }
 
