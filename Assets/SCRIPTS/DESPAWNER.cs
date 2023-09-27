@@ -15,15 +15,23 @@ public class DESPAWNER : MonoBehaviour
     public void Start()
     {
         scoreManager = FindObjectOfType<ScoreManager>();
+
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.transform.CompareTag("Obstacle"))
+        {
+            scoreManager.IncreaseScore(1);
+            other.gameObject.SetActive(false);
+        }
+
+    }
     private void Update()
     {
-        if(transform.position.x < despawnBarrier.position.x)
+        if (transform.position.x < despawnBarrier.position.x)
         {
             gameObject.SetActive(false);
-            scoreManager.IncreaseScore(1);
         }
     }
-
 }

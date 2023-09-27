@@ -14,7 +14,7 @@ public class PENGUIN : MonoBehaviour
 
     private bool canJump = true;
     private bool isGrounded = true;
-    private Rigidbody playerBody;   
+    private Rigidbody playerBody;
 
     void Start()
     {
@@ -27,7 +27,7 @@ public class PENGUIN : MonoBehaviour
         playerBody = GetComponent<Rigidbody>();
     }
 
-    
+
     void Update()
     {
         Move();
@@ -42,7 +42,7 @@ public class PENGUIN : MonoBehaviour
     //Move-------------------------------------------------------------
     private void Move()
     {
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+       transform.Translate(Vector3.forward * speed * Time.deltaTime); 
 
 
     }
@@ -68,22 +68,22 @@ public class PENGUIN : MonoBehaviour
             Gyroscope gyro = Input.gyro;
             float currentYRotation = gyro.rotationRateUnbiased.y;
 
-                if ( currentYRotation > jumpThreshold)
-                {
-                    Jump();
-                }
+            if (currentYRotation > jumpThreshold)
+            {
+                Jump();
+            }
         }
     }
 
-        private void Jump()
-        {
-            playerBody.AddForce(Vector3.up * jumpforce, ForceMode.Impulse);
-            isGrounded = false;
-            canJump = false;
-            Invoke("EnableJump", jumpcooldown);
-        }
+    private void Jump()
+    {
+        playerBody.AddForce(Vector3.up * jumpforce, ForceMode.Impulse);
+        isGrounded = false;
+        canJump = false;
+        Invoke("EnableJump", jumpcooldown);
+    }
 
-        private void EnableJump()
+    private void EnableJump()
     {
         canJump = true;
     }
@@ -106,10 +106,11 @@ public class PENGUIN : MonoBehaviour
             CurrentAngle.x = Mathf.LerpAngle(CurrentAngle.x, targetTiltAngle, tiltSpeed * Time.deltaTime);
 
             transform.rotation = Quaternion.Euler(CurrentAngle);
+            Debug.Log(CurrentAngle);
         }
     }
     //---------------------------------------------------------------------------------------------------------
 
 
-    
+
 }
