@@ -9,13 +9,13 @@ public class ObstacleSpawner : MonoBehaviour
     public Transform spawnBarrier;
     public Transform despawnBarrier;
     public Transform despawnNet;
-    public float obstacleSpeed = 3f;
+    public float obstacleSpeed = 8f;
 
     [SerializeField] private Transform SpawnTarget;
 
     private void Start()
     {
-        InvokeRepeating("SpawnObstacle", 0f, 3f);
+        InvokeRepeating("SpawnObstacle", 0f, 4f);
     }
 
     private void SpawnObstacle()
@@ -42,7 +42,7 @@ public class ObstacleSpawner : MonoBehaviour
 
     private IEnumerator ScaleUp (Transform obstacleTransform)
     {
-        float animationDuration = 1.5f;
+        float animationDuration = 0.5f;
         Vector3 targetScale = obstacleTransform.localScale;
 
         float passedTime = 0f;

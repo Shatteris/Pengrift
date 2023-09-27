@@ -213,8 +213,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 611227802}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.09, y: 1.35, z: -26.42}
-  m_LocalScale: {x: 15, y: 3, z: 0.5}
+  m_LocalPosition: {x: 0.09, y: -3.44, z: -26.42}
+  m_LocalScale: {x: 15, y: 9.4065, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -401,7 +401,7 @@ MonoBehaviour:
   spawnBarrier: {fileID: 757404699}
   despawnBarrier: {fileID: 611227806}
   despawnNet: {fileID: 1073725503}
-  obstacleSpeed: 7
+  obstacleSpeed: 8
   SpawnTarget: {fileID: 757404699}
 --- !u!1 &908631429
 GameObject:
