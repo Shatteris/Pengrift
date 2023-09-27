@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4652457776568679699}
   - component: {fileID: 2845690556714138755}
   - component: {fileID: 3691323096709110813}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 1067699688075778660}
   - component: {fileID: 3469325606821555940}
   - component: {fileID: 6383621820471624397}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Medida_Grid (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -208,7 +208,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2769402622552667816}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hole (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,7 +245,7 @@ GameObject:
   - component: {fileID: 2995282124616284812}
   - component: {fileID: 6365933036020619632}
   - component: {fileID: 1825338372958076648}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -342,7 +342,7 @@ GameObject:
   - component: {fileID: 469723813436785229}
   - component: {fileID: 6739832847643049238}
   - component: {fileID: 3007104019744320828}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Snow_Pile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -441,7 +441,7 @@ GameObject:
   - component: {fileID: 1492019505719668679}
   - component: {fileID: 7316374435283807565}
   - component: {fileID: 51648726668172224}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Medida_Grid (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -538,7 +538,7 @@ GameObject:
   - component: {fileID: 2073748245281693464}
   - component: {fileID: 5343945345633268686}
   - component: {fileID: 1572148976516450671}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Medida_Grid (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -636,7 +636,7 @@ GameObject:
   - component: {fileID: 7467059337770664072}
   - component: {fileID: 8488762426227500797}
   - component: {fileID: 5348473163845807569}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: L_Bear_Hole
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -729,7 +729,7 @@ GameObject:
   - component: {fileID: 9105368243546235855}
   - component: {fileID: 8102639643859591866}
   - component: {fileID: 854110894261444538}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -826,7 +826,7 @@ GameObject:
   - component: {fileID: 7014823705714724173}
   - component: {fileID: 519797038376118630}
   - component: {fileID: 7231785210853931918}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Medida_Grid (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -923,7 +923,7 @@ GameObject:
   - component: {fileID: 439312204863846811}
   - component: {fileID: 2020179419333688658}
   - component: {fileID: 4587006979214810884}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1020,7 +1020,7 @@ GameObject:
   - component: {fileID: 4890212712854291706}
   - component: {fileID: 2988921558266730132}
   - component: {fileID: 6441149856834384849}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Medida_Grid (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1114,7 +1114,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8242251803114577237}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hole (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1151,7 +1151,7 @@ GameObject:
   - component: {fileID: 7413680537057099029}
   - component: {fileID: 4808143956297337144}
   - component: {fileID: 1745276823502624441}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Medida_Grid (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1248,7 +1248,7 @@ GameObject:
   - component: {fileID: 8317331486820322058}
   - component: {fileID: 6853347251918473297}
   - component: {fileID: 4769868195248482829}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1342,7 +1342,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5945958219526139096}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1379,7 +1379,7 @@ GameObject:
   - component: {fileID: 1881179877391332606}
   - component: {fileID: 7951180247422580787}
   - component: {fileID: 1205736846581602219}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1476,7 +1476,7 @@ GameObject:
   - component: {fileID: 2737306398801984844}
   - component: {fileID: 3561280855401509875}
   - component: {fileID: 597209255222656639}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1573,7 +1573,7 @@ GameObject:
   - component: {fileID: 1828485625171975833}
   - component: {fileID: 478165051374315274}
   - component: {fileID: 9016585840691871647}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Medida_Grid (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1667,7 +1667,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4358044086748791868}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bear_Obstacle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1703,7 +1703,7 @@ GameObject:
   - component: {fileID: 3800689470338193911}
   - component: {fileID: 2522216359259748838}
   - component: {fileID: 6191174997420379272}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Medida_Grid (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1800,7 +1800,7 @@ GameObject:
   - component: {fileID: 4521777896682538905}
   - component: {fileID: 9142172145998541754}
   - component: {fileID: 6106673425983291609}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Medida_Grid (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1897,7 +1897,7 @@ GameObject:
   - component: {fileID: 3706516629884737389}
   - component: {fileID: 4905402749788699597}
   - component: {fileID: 3434558270695541483}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1994,7 +1994,7 @@ GameObject:
   - component: {fileID: 3042302951732633335}
   - component: {fileID: 6011970802862860606}
   - component: {fileID: 779140998621361711}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Medida_Grid (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2088,7 +2088,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3929572878201155496}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hole (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2125,7 +2125,7 @@ GameObject:
   - component: {fileID: 7266223969177061635}
   - component: {fileID: 5322493432209870435}
   - component: {fileID: 3703750806298078074}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Medida_Grid (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2222,7 +2222,7 @@ GameObject:
   - component: {fileID: 8522382585626465864}
   - component: {fileID: 9058966047666478512}
   - component: {fileID: 2780511624892043811}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Medida_Grid (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -5188034454217850715}
   - component: {fileID: 4956460467205108965}
   - component: {fileID: 8667860850341437909}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bear_L_R
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 5321358346108383672}
   - component: {fileID: 4251292346535653850}
   - component: {fileID: 6197086137579083413}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   - component: {fileID: 7510139152173583781}
   - component: {fileID: 7892453243507281313}
   - component: {fileID: 3512545047826140480}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -297,7 +297,7 @@ GameObject:
   - component: {fileID: 3247045600890244130}
   - component: {fileID: 8076317032884317530}
   - component: {fileID: 7940127100666895412}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -399,7 +399,7 @@ GameObject:
   - component: {fileID: 8026485256577975894}
   - component: {fileID: 9146701057003198693}
   - component: {fileID: 3097019431593786978}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -496,7 +496,7 @@ GameObject:
   - component: {fileID: 7935785798858972415}
   - component: {fileID: 3631404742870003725}
   - component: {fileID: 8569876168514607520}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -593,7 +593,7 @@ GameObject:
   - component: {fileID: 2962244492999166994}
   - component: {fileID: 1261635552439957799}
   - component: {fileID: 4660276874819405733}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -690,7 +690,7 @@ GameObject:
   - component: {fileID: 6221487245347779791}
   - component: {fileID: 1287396184151736861}
   - component: {fileID: 9007408024970266248}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -784,7 +784,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6409322326785907790}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bear_Obstacle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -820,7 +820,7 @@ GameObject:
   - component: {fileID: 1714877403591851984}
   - component: {fileID: 7842871096919602160}
   - component: {fileID: 4678782574117053583}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -917,7 +917,7 @@ GameObject:
   - component: {fileID: 3958976159242192136}
   - component: {fileID: 5511884579237328808}
   - component: {fileID: 6354146693425205014}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1019,7 +1019,7 @@ GameObject:
   - component: {fileID: 7882448372732385027}
   - component: {fileID: 6827619396410522341}
   - component: {fileID: 6802414119255369490}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Snow_Pile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1118,7 +1118,7 @@ GameObject:
   - component: {fileID: 4329877719386670030}
   - component: {fileID: 6937416923679108296}
   - component: {fileID: 814177808264708344}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1215,7 +1215,7 @@ GameObject:
   - component: {fileID: 5805258385020723496}
   - component: {fileID: 3809223285342781634}
   - component: {fileID: 2982983797029587867}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1312,7 +1312,7 @@ GameObject:
   - component: {fileID: 4016825533065961952}
   - component: {fileID: 5115610359507735331}
   - component: {fileID: 5642789961626255505}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1406,7 +1406,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3795639382770971734}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bear_Obstacle (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1442,7 +1442,7 @@ GameObject:
   - component: {fileID: 4803853637379762557}
   - component: {fileID: 4756331209073807815}
   - component: {fileID: 8335910160290657143}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1539,7 +1539,7 @@ GameObject:
   - component: {fileID: 8724620249500066416}
   - component: {fileID: 8958281675009817860}
   - component: {fileID: 563037745305685998}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Snow_Pile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1638,7 +1638,7 @@ GameObject:
   - component: {fileID: 7174831650434670135}
   - component: {fileID: 3311019355873058160}
   - component: {fileID: 468670886432979247}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1735,7 +1735,7 @@ GameObject:
   - component: {fileID: 5400146352897254271}
   - component: {fileID: 3699423763130477960}
   - component: {fileID: 1913380939508280696}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1832,7 +1832,7 @@ GameObject:
   - component: {fileID: 6453893702280082317}
   - component: {fileID: 7575462340656112990}
   - component: {fileID: 4372424175384030615}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
