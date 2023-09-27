@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class PENGUIN : MonoBehaviour
 {
-
-    public float tiltSpeed = 5f;
-    public float maxtiltAngle = 28f;
-    public float speed = 10f;
     public float jumpforce = 10f;
     public float jumpThreshold = 3f;
     public float jumpcooldown = 1f;
@@ -30,23 +26,29 @@ public class PENGUIN : MonoBehaviour
 
     void Update()
     {
+        Vector3 Accel = Input.acceleration;
+
         Move();
-
         isGrounded = Grounded();
-
-        LaneSwitch();
-
-        DetectJump();
+        Jump();
     }
 
-    //Move-------------------------------------------------------------
     private void Move()
     {
-       transform.Translate(Vector3.forward * speed * Time.deltaTime); 
-
-
+        float directionInput = Input.acceleration.x;
+        if (directionInput > 0.2f)
+        {
+            directionInput = 1f;
+        }
+        if (directionInput < -0.2)
+        {
+            directionInput = -1f;
+        }
+        if (directionInput < 0.2f && directionInput > -0.2f)
+        {
+            directionInput = 0f;
+        }
     }
-    //-----------------------------------------------------------------
 
     //Jump--------------------------------------------------------------------------------------
     private bool Grounded()
@@ -61,26 +63,18 @@ public class PENGUIN : MonoBehaviour
         else { return false; }
     }
 
-    private void DetectJump()
-    {
-        if (SystemInfo.supportsGyroscope && isGrounded && canJump)
-        {
-            Gyroscope gyro = Input.gyro;
-            float currentYRotation = gyro.rotationRateUnbiased.y;
-
-            if (currentYRotation > jumpThreshold)
-            {
-                Jump();
-            }
-        }
-    }
 
     private void Jump()
     {
-        playerBody.AddForce(Vector3.up * jumpforce, ForceMode.Impulse);
-        isGrounded = false;
-        canJump = false;
-        Invoke("EnableJump", jumpcooldown);
+        float jumpInput = Input.acceleration.y;
+
+        if (jumpInput > 0.3f && isGrounded && canJump)
+        {
+            playerBody.AddForce(Vector3.up * jumpforce, ForceMode.Impulse);
+            isGrounded = false;
+            canJump = false;
+            Invoke("EnableJump", jumpcooldown);
+        }
     }
 
     private void EnableJump()
@@ -88,29 +82,5 @@ public class PENGUIN : MonoBehaviour
         canJump = true;
     }
     //-------------------------------------------------------------------------------------------
-
-
-
-    //Switch Lane--------------------------------------------------------------------------------------------
-    private void LaneSwitch()
-    {
-        if (SystemInfo.supportsGyroscope)
-        {
-            Gyroscope gyro = Input.gyro;
-            Vector3 gyroRotationRate = gyro.rotationRate;
-
-            float targetTiltAngle = Mathf.Clamp(gyroRotationRate.x, -maxtiltAngle, maxtiltAngle);
-
-            Vector3 CurrentAngle = transform.eulerAngles;
-
-            CurrentAngle.x = Mathf.LerpAngle(CurrentAngle.x, targetTiltAngle, tiltSpeed * Time.deltaTime);
-
-            transform.rotation = Quaternion.Euler(CurrentAngle);
-            Debug.Log(CurrentAngle);
-        }
-    }
-    //---------------------------------------------------------------------------------------------------------
-
-
 
 }

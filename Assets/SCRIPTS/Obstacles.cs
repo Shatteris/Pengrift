@@ -5,28 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class Obstacles : MonoBehaviour
 {
-    private bool Collision = false;
+    //private bool Collision = false;
 
     //Reset to false with GameManager---------------------------------------------------------
-    public void ResetCollisionFlag()
-    {
-        Collision = false;
-    }
+    //public void ResetCollisionFlag()
+    //{
+    //    Collision = false;
+    //}
     //---------------------------------------------------------------------------------------
 
-
-    //Detect Player----------------------------------------
-    private void OnTriggerEnter(Collider HitBox)
+    //Collision with Player---------------------------------------
+    private void OnCollisionEnter(Collision collision)
     {
-        if(!Collision && HitBox.CompareTag("Player"))
+        if (collision.transform.CompareTag("Player"))
         {
             Debug.Log("Game Over");
-            Collision = true;
             GameOver();
         }
     }
     //-----------------------------------------------------
-
     private void GameOver()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

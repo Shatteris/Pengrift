@@ -24,7 +24,6 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame()
     {
-        ReadyRestart();
         SceneManager.LoadScene("Game");
     }
 
@@ -33,15 +32,4 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
-
-    //Reset obstacle colliders to false............................
-    private void ReadyRestart()
-    {
-        Obstacles[] obstacles = FindObjectsOfType<Obstacles>();
-        foreach (Obstacles obstacle in obstacles)
-        {
-            obstacle.ResetCollisionFlag();
-        }
-    }
-    //..............................................................
 }

@@ -5,12 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class DESPAWNER : MonoBehaviour
 {
-    private ScoreManager scoreManager;
-    private Transform despawnBarrier;
-    public void Initilize(Transform barrier)
-    {
-        despawnBarrier = barrier;
-    }
+    public ScoreManager scoreManager;
 
     public void Start()
     {
@@ -24,14 +19,6 @@ public class DESPAWNER : MonoBehaviour
         {
             scoreManager.IncreaseScore(1);
             other.gameObject.SetActive(false);
-        }
-
-    }
-    private void Update()
-    {
-        if (transform.position.x < despawnBarrier.position.x)
-        {
-            gameObject.SetActive(false);
         }
     }
 }
