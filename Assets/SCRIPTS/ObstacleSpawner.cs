@@ -27,7 +27,7 @@ public class ObstacleSpawner : MonoBehaviour
             obstacle.transform.position = SpawnTarget.position;
 
             //Rotation--------------------------------------------
-            obstacle.transform.rotation = Quaternion.Euler(0f, 15f, 0f);
+            obstacle.transform.rotation = Quaternion.Euler(0f, -90f, 0f);
 
             //Rigidbody and speed going up the ramp------------------------------------
             Rigidbody obstacleRigidbody = obstacle.GetComponent<Rigidbody>();
